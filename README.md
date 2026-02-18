@@ -1,4 +1,4 @@
-🎥
+<h1 align="center">🎥 Codeflix - API</h1>
 
 ### Arquitetura 
 
