@@ -3,6 +3,7 @@ from starlette.responses import HTMLResponse
 from fastapi.openapi.utils import get_openapi
 from starlette.responses import RedirectResponse
 
+from src.routes import category_router
 from src.core.postgre_conexao import ConexaoPostgres
 
 
@@ -15,7 +16,7 @@ app = FastAPI(
   version="1.0.0"
 )
 
-# app.include_router(usuario_controller)
+app.include_router(category_router)
 
 # --- Rota de Redirecionamento da Raiz para a Documentação ---
 @app.get("/", include_in_schema=False)

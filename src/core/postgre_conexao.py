@@ -1,7 +1,6 @@
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine, text
  
- 
 from src.core.config import settings
  
  
